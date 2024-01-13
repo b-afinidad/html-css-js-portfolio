@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b_afinidad - student web developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">b_afinidad</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href=#about>About</a></li>
+                <li><a href=#skills>Skills</a></li>
+                <li><a href=#projects>Projects</a></li>
+                <li><a href=#contact>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">b_afinidad</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href=#about onclick="toggleMenu()">About</a></li>
+                <li><a href=#skills onclick="toggleMenu()">Skills</a></li>
+                <li><a href=#projects onclick="toggleMenu()">Projects</a></li>
+                <li><a href=#contact onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>bryan_afinidad</h1>
+        <p>operations supervisor @ kv</p>
+        <p>cybersec certified @ csulb</p>
+        <p>student web developer</p>    
+    </header>   
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome to my portfolio! I am a passionate student web developer with a focus on learning how to create responsive and
+            user-friendly web applications. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            scelerisque metus eu luctus tristique.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>
+                <button onclick="addCSS()" id="button">CSS3</button>
+            </li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Git</li>
+            <li>Responsive Design</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            
+            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1703624628&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+        </iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/spankyb" 
+            title="@b_afinidad" target="_blank" style="color: #cccccc; text-decoration: none;">@b_afinidad</a> · <a href="https://soundcloud.com/spankyb/heavyweight-like-george-foreman" title="heavyweight like george foreman" target="_blank" style="color: #cccccc; text-decoration: none;">heavyweight like george foreman</a></div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque metus eu luctus
+                tristique.</p>
+            <a href="#" target="_blank">View Project</a>
+            <a href="#" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project">
+            <img src="project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque metus eu luctus
+                tristique.</p>
+            <a href="#" target="_blank">View Project</a>
+            <a href="#" target="_blank">GitHub</a>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me! You can contact me at <a href="mailto:b.bongato.afinidad@gmail.com">b.bongato.afinidad@gmail.com</a>.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/b-afinidad/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/b-afinidad" target="_blank">GitHub</a>
+            <!-- Add more social links as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 b_afinidad. All rights reserved.</p>
+    </footer>
+    <script>
+        let counter = 0
+        function addCSS() {
+            counter++
+        if (counter % 2 !== 0) {
+            document.getElementById("head").innerHTML = '  <title>b_afinidad - student web developer</title> \n<link rel="stylesheet" href="./style.css" />'
+        } else {
+    
+            document.getElementById("head").innerHTML = '  <title>b_afinidad - student web developer</title> '
+    
+        }
+        }
+      </script>    
+</body>
+
+</html>
