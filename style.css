@@ -1,32 +1,35 @@
 /* GENERAL */
 
 * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
     font-family: 'Trebuchet MS';
   }
-  
+
   body {
       background-color: antiquewhite;
     }
-  
+    
     h1 {
       color : whitesmoke;
       background-color : darkseagreen;
     }
-  
+
     h2 {
       color : #faf8f1;
       background-color : #c58940;
     }
-  
-    #button {
-      background-color : black;
-      color:aliceblue;
-    }
-
+    
     html {
         scroll-behavior: smooth;
     }
 
+    #button {
+        background-color : black;
+        color:lightblue;
+      }
+      
     /* TRANSITION */
 
     a, .btn {
@@ -43,12 +46,6 @@
         text-decoration: underline;
         text-underline-offset: 1rem;
         text-decoration-color: rgb(181,181,181);
-    }
-
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
     }
 
     li {
@@ -105,38 +102,6 @@
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
         background-color: white;
-    }
-
-    @media(max-width:768px){
-        .hamburger {
-            display: block;
-        }
-        .hamburger.active .bar:nth-child(2){
-            opacity:0;
-        }
-        .hamburger.active .bar:nth-child(1){
-            transform: translateY(8px) rotate(45deg);
-        }
-        .hamburger.active .bar:nth-child(3){
-            transform: translateY(-8px) rotate(-45deg);
-        }
-        .nav-menu {
-            position: fixed;
-            left: -100%;
-            top: 70px;
-            gap: 0;
-            flex-direction: column;
-            background-color: darkseagreen;
-            width: 100%;
-            text-align: center;
-            transition: 0.3s;
-        }
-        .nav-item {
-            margin: 16px 0;
-        }
-        .nav-menu.active {
-            left: 0;
-        }
     }
 
 
