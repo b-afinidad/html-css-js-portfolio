@@ -7,6 +7,7 @@
     <title>b_afinidad - student web developer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
+
 </head>
 
 <body>
@@ -99,6 +100,20 @@
     <footer>
         <p>&copy; 2024 b_afinidad. All rights reserved.</p>
     </footer>
+    <script>
+        let counter = 0
+        function addCSS() {
+            counter++
+        if (counter % 2 !== 0) {
+            document.getElementById("head").innerHTML = '  <title>b_afinidad - student web developer</title> \n<link rel="stylesheet" href="./style.css" />'
+        } else {
+    
+            document.getElementById("head").innerHTML = '  <title>b_afinidad - student web developer</title> '
+    
+        }
+        }
+      </script>
+      
       <script src="script.js"></script>
 </body>
 
