@@ -9,39 +9,29 @@
 </head>
 
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">b_afinidad</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href=#about>About</a></li>
-                <li><a href=#skills>Skills</a></li>
-                <li><a href=#projects>Projects</a></li>
-                <li><a href=#contact>Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">b_afinidad</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href=#about onclick="toggleMenu()">About</a></li>
-                <li><a href=#skills onclick="toggleMenu()">Skills</a></li>
-                <li><a href=#projects onclick="toggleMenu()">Projects</a></li>
-                <li><a href=#contact onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-
     <header>
-        <h1>bryan_afinidad</h1>
+        <h1>
+        <nav class="navbar">
+            <a href="#" class="nav-branding">bryan_afinidad</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </h1>
+        </nav>
+
         <p>operations supervisor @ kv</p>
         <p>cybersec certified @ csulb</p>
         <p>student web developer</p>    
+        <p>music producer</p>
     </header>   
 
     <section id="about">
@@ -120,7 +110,9 @@
     
         }
         }
-      </script>    
+      </script>
+      
+      <script src="script.js"></script>
 </body>
 
 </html>
