@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaiGow Tiles</title>
+</head>
+<body>
+    <div class="container">
+        <img id="tile1" src="" alt="Tile 1">
+        <img id="tile2" src="" alt="Tile 2">
+        <button onclick="getRandomTiles()">DEAL</button>
+    </div>
+
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+    </style>
+</body>
+
+<script>
+    const tiles = [
+    'image1.png',
+    'image2.png',
+    'image3.png',
+    'image4.png',
+    'image5.png',
+    'image6.png',
+    'image7.png',
+    'image8.png',
+    'image9.png',
+    'image10.png',
+    'image11.png',
+    'image12.png',
+    'image13.png',
+    'image14.png',
+    'image15.png',
+    'image16.png',
+    'image17.png',
+    'image18.png',
+    'image19.png',
+    'image20.png',
+    'image21.png'
+];
+
+function getRandomTiles() {
+    const tile1Index = Math.floor(Math.random() * tiles.length);
+    let tile2Index;
+
+    do {
+        tile2Index = Math.floor(Math.random() * tiles.length);
+    } while (tile2Index === tile1Index);
+
+    const tile1 = tiles[tile1Index];
+    const tile2 = tiles[tile2Index];
+
+    document.getElementById('tile1').src = tile1;
+    document.getElementById('tile2').src = tile2;
+}
+</script>
+</html>
