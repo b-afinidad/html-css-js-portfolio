@@ -33,10 +33,16 @@
 
     section {
       padding-top: 2vh;
-      margin: 0 10rem;
+      margin: 0 1rem;
       box-sizing: border-box;
       min-height: fit-content;
     }
+
+    .section-container {
+      display: flex;
+    }
+
+    
 
     /* TRANSITION */
     a, .btn {
