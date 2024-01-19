@@ -7,12 +7,12 @@
   }
 
   body {
-      background-color: antiquewhite;
+      background-color:whitesmoke
     }
     
     h1 {
       color : whitesmoke;
-      background-color : darkseagreen;
+      background-color : darkolivegreen;
     }
 
     h2 {
@@ -27,6 +27,10 @@
     footer {
       padding-top: 2vh;
       text-align: center;
+    }
+    
+    #appbrewery{
+      background-color: #f8c821;
     }
     
     /* SECTIONS */
@@ -115,12 +119,4 @@
         transition: all 0.3s ease-in-out;
         background-color: white;
     }
-
-  #paidgowbody {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-  }
 
