@@ -23,11 +23,21 @@
     html {
         scroll-behavior: smooth;
     }
-      
 
-    .section_pic-container{
-      border-radius: 50%;
+    footer {
+      padding-top: 2vh;
+      text-align: center;
     }
+    
+    /* SECTIONS */
+
+    section {
+      padding-top: 2vh;
+      margin: 0 10rem;
+      box-sizing: border-box;
+      min-height: fit-content;
+    }
+
     /* TRANSITION */
     a, .btn {
         transition: all 300ms ease;
