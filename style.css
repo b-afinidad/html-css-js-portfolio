@@ -1,13 +1,13 @@
 /* GENERAL */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Trebuchet MS';
-  }
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Trebuchet MS';
+    }
 
-  body {
-      background-color:whitesmoke
+    body {
+    background-color:antiquewhite
     }
     
     h1 {
@@ -52,13 +52,13 @@
         transition: all 300ms ease;
     }
     a {
-        color : whitesmoke;
+        color : seagreen;
         text-decoration: none;
         text-decoration-color: white;
     }
 
     a:hover {
-        color: darkolivegreen;
+        color: whitesmoke;
         text-decoration: underline;
         text-underline-offset: .5rem;
         text-decoration-color: darkolivegreen);
@@ -101,10 +101,6 @@
         transition: 0.7s ease;
     }
 
-    .nav-link:hover {
-        color: dodgerblue;
-    }
-
     .hamburger {
         display: none;
         cursor: pointer;
@@ -120,3 +116,40 @@
         background-color: white;
     }
 
+    .container {
+        text-align: center;
+        width: 150px;
+        height: 250px;
+        margin: 10px;
+    }
+    
+    #tile1 {
+        width: 150px;
+        height: 250px;
+        margin: 10px;
+    }
+    
+    #tile2 {
+        width: 150px;
+        height: 250px;
+        margin: 10px;
+    }
+
+    .tilescontainer {
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+    }
+    
+    .tilescontainer {
+        text-align: center;
+    }
+
+    .soundcloudlink{
+        padding-top: 33px;
+    }
