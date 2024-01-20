@@ -47,8 +47,6 @@ header a.logo {
     font-size: 14px;
     padding: 20 50px;
 }
-
-
 .right-nav {
     position:fixed;
     right: 0;
@@ -57,7 +55,6 @@ header a.logo {
     display: flex;
     align-items: center;
 }
-
 .right-nav a {
     text-transform: uppercase;
     text-decoration: none;
