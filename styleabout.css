@@ -1,0 +1,104 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+a {
+    color: antiquewhite
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+header a.logo {
+    margin-right: 40px;
+}
+
+.center-nav {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 13px;
+}
+
+
+.right-nav {
+    position:fixed;
+    right: 0;
+    top: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.right-nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 50px;
+}
+.hamburger {
+    position: absolute;
+    right: 0;
+    top:-7px;
+    color: white;
+    padding: 20px;
+    background-color: transparent;
+    border: 0;
+    transform: rotate(90deg);
+}
+
+section {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+section div.content-outer {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+section div.content {
+    position: absolute;
+    bottom: 15vh;
+    left: 50px;
+    max-width: 260px;
+}
+
+section div.content h2 {
+    font-size: 48px;
+    margin: 0;
+}
+
+section div.content h3 {
+    margin: 0 0 10px;
+}
+
+section div.content a {
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 20px 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 30px;
+}
+

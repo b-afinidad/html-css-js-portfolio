@@ -4,76 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PaiGow Tiles</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-    <div class="container">
+    <header>
+        <h1>
+            <nav class="navbar">
+                <a href="index.html" class="logo">b_afinidad</a>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="./about.html" class="nav-link">About Me</a></li>
+                        <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="./paigow.html" class="nav-link">pai gow tiles</a></li>
+                    </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+             </nav>
+        </h1>
+    </header> 
+    
+    <div class="tilescontainer">
         <img id="tile1" src="" alt="Tile 1">
         <img id="tile2" src="" alt="Tile 2">
         <button onclick="getRandomTiles()">DEAL</button>
     </div>
 
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-}
+    <div id="audio">
+        <audio controls src="Project 1.mp3"></audio>
+        <style>
+            audio {
+                align-items: center;
+            }
+        </style>
+    </div>
 
-.container {
-    text-align: center;
-}
-
-img {
-    width: 150px;
-    height: 250px;
-    margin: 10px;
-}
-    </style>
 </body>
 
-<script>
+    <script src="script.js"></script>
 
-const tiles = [
-    'assets/image1.png',
-    'assets/image2.png',
-    'assets/image3.png',
-    'assets/image4.png',
-    'assets/image5.png',
-    'assets/image6.png',
-    'assets/image7.png',
-    'assets/image8.png',
-    'assets/image9.png',
-    'assets/image10.png',
-    'assets/image11.png',
-    'assets/image12.png',
-    'assets/image13.png',
-    'assets/image14.png',
-    'assets/image15.png',
-    'assets/image16.png',
-    'assets/image17.png',
-    'assets/image18.png',
-    'assets/image19.png',
-    'assets/image20.png',
-    'assets/image21.png'
-];
-
-function getRandomTiles() {
-    const tile1Index = Math.floor(Math.random() * tiles.length);
-    let tile2Index;
-
-    do {
-        tile2Index = Math.floor(Math.random() * tiles.length);
-    } while (tile2Index === tile1Index);
-
-    const tile1 = tiles[tile1Index];
-    const tile2 = tiles[tile2Index];
-
-    document.getElementById('tile1').src = tile1;
-    document.getElementById('tile2').src = tile2;
-}
-
-</script>
 </html>
