@@ -1,12 +1,17 @@
 html, body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: black ;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
+    font-family: 'Trebuchet MS';
+    color: antiquewhite
 }
 
 a {
@@ -24,15 +29,23 @@ header {
     top: 0;
     z-index: 1;
 }
+
 header a.logo {
     margin-right: 40px;
 }
 
 .center-nav {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 14px;
-    padding: 0 13px;
+    padding: 20 50px;
 }
 
 
@@ -59,7 +72,6 @@ header a.logo {
     padding: 20px;
     background-color: transparent;
     border: 0;
-    transform: rotate(90deg);
 }
 
 section {
@@ -102,3 +114,69 @@ section div.content a {
     margin-top: 30px;
 }
 
+a, .btn {
+    transition: all 300ms ease;
+}
+
+a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    text-decoration-color: darkolivegreen;
+}
+
+li {
+    list-style: none;
+}
+
+.nav-item {
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+nav {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.navbar, .logo {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-links {
+    transition: 0.7s ease;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+footer {
+      padding-top: 11vh;
+      text-align: center;
+    }

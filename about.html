@@ -10,55 +10,90 @@
 <body>
 
     <header>
-        <a href="index.html" class="logo">b_afinidad</a>
-        <nav class="center-nav">
-            <a href="">Falcon9</a>
-            <a href="">Falcon Heavy</a>
-            <a href="">Dragon</a>
-            <a href="">Starship</a>
-            <a href="">Human Spaceflight</a>
-            <a href="">Rideshare</a>
-            <a href="">Starlink</a>
-        </nav>
-        <nav class="right-nav">
-            <a href="">Shop</a>
-            <button class="hamburger">|||</button>
-        </nav>
+        
+        <h1><nav class="navbar">
+            <a href="index.html" class="logo">b_afinidad</a>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="./about.html" class="nav-link">About Me</a></li>
+                <li class="nav-item"><a href="" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+        </nav></h1>
     </header>
     
     <div class="content-outer">
-        <section style="background-image: url('assets/onepiece.jpg');">
-        
+        <section id="Profile" style="background-image: url('assets/onepiece.jpg');">
             <div class="content">
-                <h3>RECENT MISSION</h3>
-                <h2>USSF-44 MISSION</h2>
-                <a href="">Watch</a>
+                <h2>b_afinidad</h2>
+                <h3>Ops Supervisor @ KV</h3>
+                <h3>CyberSec Certified @ CSULB</h3>
+                <h3>Student Web Developer @ App Brewery</h3>
+                <div id="socials-container">
+                    <img 
+                        src="./assets/linkedin.png" 
+                        alt="My LinkedIn profile" 
+                        class="icon" 
+                        onclick="location.href='https://www.linkedin.com/in/b-afinidad/'"
+                        width="75px"
+                        height="75px"
+                    />
+                    <img 
+                        src="./assets/github.png" 
+                        alt="My Github Profile" 
+                        class="icon" 
+                        onclick="location.href='https://github.com/b-afinidad'"
+                        width="75px"
+                        height="75px"
+                    />
+                </div>
+                <a href="./about.html">Learn More</a>
             </div>
         </section>
     
-        <section style="background-image: url('assets/songohan.jpg');">
+        <section id="Skills" style="background-image: url('assets/songohan.jpg');">
             <div class="content" >
-                <h2>STARSHIP UPDATE</h2>
+                <h2>Skills</h2>
+                <h3>Casino Gaming</h3>
+                <h3>Leadership</h3>
+                <h3>VIP Services</h3>
+                <h3>Casino Management</h3>
+                <h3>Operations Management</h3>
+                <a href="./assets/Bryan Afinidad.pdf">Download CV</a></button>
+            </div>
+        </section>
+    
+        <section id="OtherSkills" style="background-image: url('assets/vegeta.jpg');">
+            <div class="content">
+                <h2>Other Skills</h2>
+                <h3>High Limit Baccarat</h3>
+                <h3>Pai Gow Tiles</h3>
+                <h3>VIP Pai Gow Poker</h3>
                 <a href="">Learn More</a>
             </div>
         </section>
     
-        <section style="background-image: url('assets/vegeta.jpg');">
+        <section id="Projects" style="background-image: url('assets/kakashi&9tails.jpg');">
             <div class="content">
-                <h2>STARSHIP TO LAND NASA ASTONAUTS ON THE MOON</h2>
-                <a href="">Learn More</a>
-            </div>
-        </section>
-    
-        <section style="background-image: url('assets/kakashi&9tails.jpg');">
-            <div class="content">
-                <h3>Upcoming Launch</h3>
-                <h2>EUTELSAT HOTBIRD 13G MISSION</h2>
-                <a href="">Watch</a>
+                <h2>Projects</h2>
+                <a href="./projects.html">Explore</a>
             </div>
         </section>
     </div>
 
-    <footer>footer text</footer>
+    <footer id="footer">
+        <div id="audio">
+            <audio controls src="Project 1.mp3"></audio>
+        </div>
+        <p>&copy; 2024 b_afinidad. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
